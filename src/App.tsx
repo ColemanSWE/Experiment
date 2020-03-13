@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { NoiseGen } from './NoiseGens/NoiseGens';
+import { NoiseGen } from './Instruments/NoiseGens/NoiseGens'
+import { Slider } from './Components/Slider/Slider'
 
 function App() {
   return (
-    <NoiseGen />
+    <>
+      <NoiseGen />
+      <Slider />
+    </>
   );
 }
 
