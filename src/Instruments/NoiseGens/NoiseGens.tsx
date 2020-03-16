@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Noise, AutoFilter, Master } from "tone";
-import Slider from '~/Component/Slider'
+import { Slider } from 'E:/Experiment/src/Components/Slider/Slider'
 
 export type NoiseType = 'white' | 'pink' | 'brown';
 
@@ -20,6 +20,7 @@ export class NoiseGen extends Component<{}, NoiseGenState> {
 
     handleVolumeChange = (event: any) => {
         this.setState({ volume: event.currentTarget.value })
+        this.noiseGen.volume.value = this.state.volume
     };
 
     handleNoiseChange = (event: React.FormEvent<HTMLSelectElement>) => {
@@ -47,7 +48,7 @@ export class NoiseGen extends Component<{}, NoiseGenState> {
                     <option value='pink'>Pink</option>
                     <option value='brown'>Brown</option>
                 </select>
-                <Slider max={6} min={-6} defaulValue={0} value={this.state.volume} onChange={this.handleVolumeChange}/>
+                <Slider max={6} min={-6} defaultValue={0} value={this.state.volume} onChange={this.handleVolumeChange}/>
             </div>
         )
     }

@@ -5,13 +5,14 @@ export interface SliderProps {
     min: number
     max: number
     defaultValue: number
-    onChange?: void
+    value: number
+    onChange: (event: any) => void
 }
 
 export class Slider extends Component<SliderProps, {}> {
     
     state = {
-        value: 50
+        value: 0
     }
 
     handleChange = (e: any) => {
