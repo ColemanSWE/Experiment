@@ -1,19 +1,26 @@
 import React, { Component } from "react";
 import { Noise, AutoFilter, Master } from "tone";
+import Slider from '~/Component/Slider'
 
 export type NoiseType = 'white' | 'pink' | 'brown';
 
 interface NoiseGenState {
     noiseUsed: NoiseType 
+    volume: number
 }
 
 export class NoiseGen extends Component<{}, NoiseGenState> {
     state: Readonly<NoiseGenState> = {
-        noiseUsed: 'white' // Need to just make separate generators with sliders. Updating state doesn't seem to change the sound of the generator. 
+        noiseUsed: 'white', // Need to just make separate generators with sliders. Updating state doesn't seem to change the sound of the generator. 
+        volume: 0
     }
 
     noiseGen = new Noise(this.state.noiseUsed).toMaster()
     autoFilter = new AutoFilter().connect(Master);
+
+    handleVolumeChange = (event: any) => {
+        this.setState({ volume: event.currentTarget.value })
+    };
 
     handleNoiseChange = (event: React.FormEvent<HTMLSelectElement>) => {
         this.setState({ noiseUsed: event.currentTarget.value as NoiseType })
@@ -40,6 +47,7 @@ export class NoiseGen extends Component<{}, NoiseGenState> {
                     <option value='pink'>Pink</option>
                     <option value='brown'>Brown</option>
                 </select>
+                <Slider max={6} min={-6} defaulValue={0} value={this.state.volume} onChange={this.handleVolumeChange}/>
             </div>
         )
     }
