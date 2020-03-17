@@ -1,10 +1,11 @@
 import React from 'react';
 import { NoiseGen } from './Instruments/NoiseGens/NoiseGens'
-import { Slider } from './Components/Slider/Slider'
+import { Header } from './Components/Header';
 
 function App() {
   return (
     <>
+      <Header />
       <NoiseGen />
     </>
   );
