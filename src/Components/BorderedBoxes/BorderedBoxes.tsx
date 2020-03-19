@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import styles from './styles.module.scss'
 
-export class Footer extends Component {
+export class BorderedBox extends Component {
     render() {
         return (
-            <div className={styles.footer}>
-                Footer stuff goes here...
+            <div className={styles.boxed}>
+                This text is enclosed in a box.
             </div>
         )
     }
