@@ -2,13 +2,24 @@ import React from 'react';
 // import { NoiseGen } from './Instruments/NoiseGens/NoiseGens'
 import { Header } from './Components/Header';
 import { Footer } from './Components/Footer';
-import { BorderedBox } from './Components/BorderedBoxes';
+import styles from './styles.module.scss'
 
 function App() {
   return (
     <>
       <Header />
-      <BorderedBox />
+      <div className={styles.boxed}>
+        music
+      </div>
+      <div className={styles.boxed}>
+        visuals
+      </div>
+      <div className={styles.boxed}>
+        shop
+      </div>
+      <div className={styles.boxed}>
+        about
+      </div>
       <Footer />
     </>
   );
