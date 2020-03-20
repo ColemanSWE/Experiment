@@ -8,21 +8,24 @@ function App() {
   return (
     <>
       <Header />
-      <div className={styles.centered}>
-        <div className={styles.blueBox}>
-        <a href="#music">music</a>
-        </div>
-        <div className={styles.redBox}>
-          <a href="#visuals">visuals</a>
-        </div>
-        <div className={styles.greenBox}>
-        <a href="#shop">shop</a>
-        </div>
-        <div className={styles.purpleBox}>
-        <a href="#about">about</a>
+      <div className={styles.grad}>
+        <div className={styles.centered}>
+          <div className={styles.blueBox}>
+            <a href="#music">music</a>
+          </div>
+          <div className={styles.redBox}>
+            <a href="#visuals">visuals</a>
+          </div>
+          <div className={styles.greenBox}>
+            <a href="#shop">shop</a>
+          </div>
+          <div className={styles.purpleBox}>
+            <a href="#about">about</a>
+          </div>
         </div>
       </div>
       <Footer />
+      
     </>
   );
 }

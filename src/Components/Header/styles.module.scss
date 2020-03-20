@@ -8,7 +8,7 @@
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: black;
+    background-color: transparent;
     padding: 20px 10px;
     width: 100%;
   }
@@ -17,7 +17,7 @@
   .header a {
     font-family: 'thin_worms', Fallback, sans-serif;
     float: left;
-    color: white;
+    color: black;
     padding: 12px 12px 12px 12px;
     text-decoration: none;
     font-size: 72px;
@@ -40,7 +40,7 @@
   
   /* Style the active/current link*/
   .header a.active {
-    color: white;
+    color: black;
   }
   
   /* Float the link section to the right */
