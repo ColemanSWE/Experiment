@@ -8,17 +8,17 @@ function App() {
   return (
     <>
       <Header />
-      <div className={styles.boxed}>
-        music
+      <div className={styles.blueBox}>
+      <a href="#music">music</a>
       </div>
-      <div className={styles.boxed}>
-        visuals
+      <div className={styles.redBox}>
+        <a href="#visuals">visuals</a>
       </div>
-      <div className={styles.boxed}>
-        shop
+      <div className={styles.greenBox}>
+      <a href="#shop">shop</a>
       </div>
-      <div className={styles.boxed}>
-        about
+      <div className={styles.purpleBox}>
+      <a href="#about">about</a>
       </div>
       <Footer />
     </>

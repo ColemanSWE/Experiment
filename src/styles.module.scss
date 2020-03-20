@@ -1,3 +1,50 @@
-.boxed {
-  border: 5px solid #DEF3FD
+@font-face {
+  font-family: '3dlet';
+  src:  url('./Fonts/3dlet-webfont.woff2') format('woff2'),
+        url('./Fonts/3dlet-webfont.woff') format('woff');
+}
+
+.blueBox {
+  font-family: '3dlet', Fallback, sans-serif;
+  font-size: 72px;
+  text-align: center;
+  border: 5px solid #DEF3FD;
+  width: 236px;
+  height: 190px;
+  word-wrap: break-word;
+}
+
+.redBox {
+  font-family: '3dlet', Fallback, sans-serif;
+  font-size: 72px;
+  text-align: center;
+  border: 5px solid #FDDFDF;
+  width: 236px;
+  height: 190px;
+  word-wrap: break-word;
+}
+
+.greenBox {
+  font-family: '3dlet', Fallback, sans-serif;
+  font-size: 72px;
+  text-align: center;
+  border: 5px solid #DEFDE0;
+  width: 236px;
+  height: 190px;
+  word-wrap: break-word;
+}
+
+.purpleBox {
+  font-family: '3dlet', Fallback, sans-serif;
+  font-size: 72px;
+  text-align: center;
+  border: 5px solid #F0DEFD;
+  width: 236px;
+  height: 190px;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
