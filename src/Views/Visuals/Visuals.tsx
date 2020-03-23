@@ -6,11 +6,11 @@ import styles from './styles.module.scss'
 
 export class Visuals extends Component {
   render() {
-      return (
-            <>
-                <Header />
-                <Footer />
-            </>
-        );
-    }
+    return (
+      <>
+        <Header />
+        <Footer />
+      </>
+    );
+  } 
 }
