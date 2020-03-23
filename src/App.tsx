@@ -2,6 +2,10 @@ import React from 'react'
 // import { NoiseGen } from './Instruments/NoiseGens/NoiseGens'
 import { Header } from './Components/Header'
 import { Footer } from './Components/Footer'
+import { Music } from './Views/Music'
+import { Shop } from './Views/Shop'
+import { About } from './Views/About'
+import { Visuals } from './Views/Visuals'
 import styles from './styles.module.scss'
 import {
   BrowserRouter as Router,
@@ -31,7 +35,7 @@ function App() {
           </div>
         </div>
       </div>
-{/*
+
       <Switch>
         <Route path="/music">
           <Music />
@@ -46,7 +50,7 @@ function App() {
           <About />
         </Route>
       </Switch>
-*/}
+
       </Router>
       <Footer />
     </>
