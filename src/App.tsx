@@ -18,21 +18,37 @@ function App() {
       <div className={styles.grad}>
         <div className={styles.centered}>
           <div className={styles.blueBox}>
-            <Route href="#music">music</Route>
+            <Link to="music">music</Link>
           </div>
           <div className={styles.redBox}>
-            <a href="#visuals">visuals</a>
+            <Link to="visuals">visuals</Link>
           </div>
           <div className={styles.greenBox}>
-            <a href="#shop">shop</a>
+            <Link to="shop">shop</Link>
           </div>
           <div className={styles.purpleBox}>
-            <a href="#about">about</a>
+            <Link to="about">about</Link>
           </div>
         </div>
       </div>
-      <Footer />
+{/*
+      <Switch>
+        <Route path="/music">
+          <Music />
+        </Route>
+        <Route path="/visuals">
+          <Visuals />
+        </Route>
+        <Route path="/shop">
+          <Shop />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+      </Switch>
+*/}
       </Router>
+      <Footer />
     </>
   );
 }
