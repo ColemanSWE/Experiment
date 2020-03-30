@@ -9,6 +9,9 @@ export class Visuals extends Component {
     return (
       <>
         <Header />
+        <div className={styles.title}>
+
+        </div>
         <Footer />
       </>
     );

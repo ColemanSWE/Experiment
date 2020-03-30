@@ -35,7 +35,7 @@ function App() {
           </div>
         </div>
       </div>
-
+{/*
       <Switch>
         <Route path="/music">
           <Music />
@@ -50,7 +50,7 @@ function App() {
           <About />
         </Route>
       </Switch>
-
+*/}
       </Router>
       <Footer />
     </>
