@@ -36,7 +36,7 @@ function App() {
       </div>
 
       <Switch>
-        {/*<Route path="/music">
+        <Route path="/music">
           <Music />
         </Route>
         <Route path="/visuals">
@@ -44,8 +44,10 @@ function App() {
         </Route>
         <Route path="/shop">
           <Shop />
-  </Route>*/}
-        <Route path="/about" component={About} />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
       </Switch>
 
       </Router>
