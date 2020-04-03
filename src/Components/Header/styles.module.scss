@@ -5,6 +5,11 @@
        url('Fonts/mb-thin_worms-webfont.woff') format('woff'), 
 }
 
+img {
+  max-width: 15%;
+  height:auto;
+}
+
 .header {
     overflow: hidden;
     background-color: transparent;
