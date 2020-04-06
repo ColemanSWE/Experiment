@@ -10,7 +10,7 @@ export class Visuals extends Component {
       <>
         <Header />
         <div className={styles.title}>
-
+          visuals
         </div>
         <Footer />
       </>

@@ -3,7 +3,7 @@ import { Header } from './Components/Header'
 import { Footer } from './Components/Footer'
 import { Music } from './Views/Music'
 import { Shop } from './Views/Shop'
-import { About } from './About'
+import { About } from './Views/About'
 import { Visuals } from './Views/Visuals'
 import styles from './styles.module.scss'
 import {
