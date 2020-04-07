@@ -10,8 +10,8 @@ body {
 
 .blueBox {
   position: relative;
-  left: 3%;
-  top: 200px;
+  top: 30%;
+  left: 10%;
   font-family: '3dlet', Fallback, sans-serif;
   font-size: 72px;
   text-align: center;
@@ -24,9 +24,9 @@ body {
 }
 
 .redBox {
+  top: 30%;
+  left: 10%;
   position: relative;
-  left: 28%;
-  top: 0px;
   font-family: '3dlet', Fallback, sans-serif;
   font-size: 72px;
   text-align: center;
@@ -39,9 +39,9 @@ body {
 }
 
 .greenBox {
+  top: 30%;
+  left: 10%;
   position: relative;
-  left: 53%;
-  top: -200px;
   font-family: '3dlet', Fallback, sans-serif;
   font-size: 72px;
   text-align: center;
@@ -54,9 +54,9 @@ body {
 }
 
 .purpleBox {
+  top: 30%;
+  left: 10%;
   position: relative;
-  left: 78%;
-  top: -400px;
   font-family: '3dlet', Fallback, sans-serif;
   font-size: 72px;
   text-align: center;
@@ -69,6 +69,8 @@ body {
 }
 
 .centered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   height: 62%;
   width: 90%;
   position: absolute;

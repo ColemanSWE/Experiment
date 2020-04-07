@@ -17,25 +17,25 @@ function App() {
   
   const Home = () => {
     return(
-      <>
-    <Header />
-        <div className={styles.grad}>
-          <div className={styles.centered}>
-            <div className={styles.blueBox}>
-              <Link to="music">music</Link>
-            </div>
-            <div className={styles.redBox}>
-              <Link to="visuals">visuals</Link>
-            </div>
-            <div className={styles.greenBox}>
-              <Link to="shop">shop</Link>
-            </div>
-            <div className={styles.purpleBox}>
-              <Link to="about">about</Link>
+    <>
+      <Header />
+          <div className={styles.grad}>
+            <div className={styles.centered}>
+              <div className={styles.blueBox}>
+                <Link to="music">music</Link>
+              </div>
+              <div className={styles.redBox}>
+                <Link to="visuals">visuals</Link>
+              </div>
+              <div className={styles.greenBox}>
+                <Link to="shop">shop</Link>
+              </div>
+              <div className={styles.purpleBox}>
+                <Link to="about">about</Link>
+              </div>
             </div>
           </div>
-        </div>
-    <Footer />
+      <Footer />
     </>
     )
   }
