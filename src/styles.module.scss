@@ -84,3 +84,10 @@ a {
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 800px) {
+  .centered {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: 100%;
+  }
+}
