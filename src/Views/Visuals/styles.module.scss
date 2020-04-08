@@ -8,4 +8,19 @@
     font-family: '3dlet', Fallback, sans-serif;
     font-size: 108px;
     text-align: center;
+    top: 20%;
+    left: 40%;
+    position: absolute;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    height: 50%;
+    width: 75%;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FCF7DE;
 }

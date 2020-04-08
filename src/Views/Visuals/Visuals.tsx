@@ -12,6 +12,9 @@ export class Visuals extends Component {
         <div className={styles.title}>
           visuals
         </div>
+        <div className={styles.container}>
+
+        </div>
         <Footer />
       </>
     );
