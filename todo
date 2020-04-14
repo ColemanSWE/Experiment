@@ -1,3 +1,6 @@
 1. Optimize CSS for mobile. 
+    -Still need to handle for tablet, maybe older iphones.
+    -Update header CSS.
+    -Update other pages' CSS.
 2. Make a changing gif for the header icon. 
 3. The rest is just styling, filling content. 
