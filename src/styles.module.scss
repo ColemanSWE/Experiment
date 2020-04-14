@@ -4,6 +4,10 @@
         url('./Fonts/3dlet-webfont.woff') format('woff');
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 body {
   background-image: linear-gradient(to right, #ebd4fc, #cfeefc);
 }
@@ -16,8 +20,8 @@ body {
   font-size: 72px;
   text-align: center;
   border: 5px solid #DEF3FD;
-  width: 236px;
-  height: 190px;
+  width: 70%;
+  height: 40%;
   vertical-align: middle;
   line-height: 95px; 
   word-wrap: break-word;
@@ -31,8 +35,8 @@ body {
   font-size: 72px;
   text-align: center;
   border: 5px solid #FDDFDF;
-  width: 236px;
-  height: 190px;
+  width: 70%;
+  height: 40%;
   vertical-align: middle;
   line-height: 95px; 
   word-wrap: break-word;
@@ -46,8 +50,8 @@ body {
   font-size: 72px;
   text-align: center;
   border: 5px solid #DEFDE0;
-  width: 236px;
-  height: 190px;
+  width: 70%;
+  height: 40%;
   vertical-align: middle;
   line-height: 190px; 
   word-wrap: break-word;
@@ -61,8 +65,8 @@ body {
   font-size: 72px;
   text-align: center;
   border: 5px solid #F0DEFD;
-  width: 236px;
-  height: 190px;
+  width: 70%;
+  height: 40%;
   vertical-align: middle;
   line-height: 95px; 
   word-wrap: break-word;
@@ -87,7 +91,50 @@ a {
 
 @media screen and (max-width: 500px) {
   .centered {
-    width: 90%; 
     height: 80%;
+    width: 70%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FCF7DE;
+  }
+
+  .blueBox {
+    width: 60%; 
+    height: 70%;
+    font-size: 50px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .redBox {
+    width: 60%; 
+    height: 70%;
+    font-size: 38px;
+    top: 30%;
+    left: 10%;
+  }
+
+  .greenBox {
+    width: 60%; 
+    height: 70%;
+    font-size: 50px;
+    top: 20%;
+    left: 10%;
+    vertical-align: middle;
+    line-height: 100px; 
+    word-wrap: break-word;
+  }
+
+  .purpleBox {
+    width: 60%; 
+    height: 70%;
+    font-size: 50px;
+    top: 18%;
+    left: 10%;
   }
 }
