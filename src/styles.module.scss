@@ -12,19 +12,22 @@ body {
   background-image: linear-gradient(to right, #ebd4fc, #cfeefc);
 }
 
+div {
+  line-height: 200px;
+  font-size: 160px;
+  word-wrap: break-word;
+}
+
 .blueBox {
   position: relative;
   top: 30%;
   left: 10%;
   font-family: '3dlet', Fallback, sans-serif;
-  font-size: 72px;
   text-align: center;
   border: 5px solid #DEF3FD;
-  width: 70%;
-  height: 40%;
   vertical-align: middle;
-  line-height: 95px; 
-  word-wrap: break-word;
+  width: 70%;
+  height: 35%;
 }
 
 .redBox {
@@ -32,13 +35,11 @@ body {
   left: 10%;
   position: relative;
   font-family: '3dlet', Fallback, sans-serif;
-  font-size: 72px;
   text-align: center;
   border: 5px solid #FDDFDF;
   width: 70%;
-  height: 40%;
-  vertical-align: middle;
-  line-height: 95px; 
+  height: 35%;
+  vertical-align: middle; 
   word-wrap: break-word;
 }
 
@@ -47,14 +48,11 @@ body {
   left: 10%;
   position: relative;
   font-family: '3dlet', Fallback, sans-serif;
-  font-size: 72px;
   text-align: center;
   border: 5px solid #DEFDE0;
   width: 70%;
-  height: 40%;
+  height: 35%;
   vertical-align: middle;
-  line-height: 190px; 
-  word-wrap: break-word;
 }
 
 .purpleBox {
@@ -62,14 +60,11 @@ body {
   left: 10%;
   position: relative;
   font-family: '3dlet', Fallback, sans-serif;
-  font-size: 72px;
   text-align: center;
   border: 5px solid #F0DEFD;
   width: 70%;
-  height: 40%;
+  height: 35%;
   vertical-align: middle;
-  line-height: 95px; 
-  word-wrap: break-word;
 }
 
 .centered {

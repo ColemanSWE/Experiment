@@ -5,10 +5,8 @@ export class Header extends Component {
     render() {
         return (
             <div className={styles.header}>
-                <a className={styles.active} href="/"><img src="SuffocationPitGif.gif" alt="Suffcation Pit" /></a>
-                <img className={styles.header} src="Wireframe Hand.png" alt="" />   
-                <div className={styles.headerRight}>
-                </div>
+                <a className={styles.active} href="/"><img className={styles.logo} src="SuffocationPitGif.gif" alt="Suffcation Pit" /></a>
+                <img className={styles.hand} src="Wireframe Hand.png" alt="" />   
             </div>
         )
     }

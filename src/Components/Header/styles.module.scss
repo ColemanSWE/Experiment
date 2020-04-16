@@ -47,7 +47,17 @@ img {
       display: block;
       text-align: left;
     }
+    
     .header-right {
       float: none;
+    }
+
+    .logo {
+      max-width: 90%;
+      height:auto;
+    }
+
+    .hand {
+      display: none;
     }
   }
