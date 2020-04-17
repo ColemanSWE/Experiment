@@ -6,7 +6,7 @@
 
 .title {
     font-family: '3dlet', Fallback, sans-serif;
-    font-size: 108px;
+    font-size: 160px;
     text-align: center;
     top: 20%;
     left: 40%;
@@ -24,3 +24,18 @@
     transform: translate(-50%, -50%);
     border: 5px solid #FCF7DE;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        height: 80%;
+        width: 80%;
+        left: 50%;
+        top: 80%;
+    }
+
+    .title {
+        left: 9%;
+        top: 20%;
+        font-size: 72px;
+    }
+  }
