@@ -85,11 +85,16 @@
   }
   
   @media screen and (max-width: 500px) {
+
+    div {
+        line-height: 70px;
+    }
+
     .centered {
       height: 80%;
       width: 70%;
       position: absolute;
-      top: 55%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       border: 5px solid #FCF7DE;
@@ -97,39 +102,33 @@
   
     .blueBox {
       width: 60%; 
-      height: 70%;
+      height: 50%;
       font-size: 50px;
-      position: relative;
-      top: 30%;
+      top: 20%;
       left: 10%;
-      text-align: center;
-      vertical-align: middle;
     }
   
     .redBox {
       width: 60%; 
-      height: 70%;
+      height: 50%;
       font-size: 38px;
-      top: 30%;
+      top: 10px;
       left: 10%;
     }
   
     .greenBox {
       width: 60%; 
-      height: 70%;
+      height: 50%;
       font-size: 50px;
-      top: 20%;
+      top: 10px;
       left: 10%;
-      vertical-align: middle;
-      line-height: 100px; 
-      word-wrap: break-word;
     }
   
     .purpleBox {
       width: 60%; 
-      height: 70%;
+      height: 50%;
       font-size: 50px;
-      top: 20%;
+      top: 10px;
       left: 10%;
     }
   }
