@@ -12,7 +12,7 @@ export class Home extends Component {
               <div className={styles.grad}>
                 <div className={styles.centered}>
                   <div className={styles.blueBox}>
-                    <Link to="music">music</Link>
+                    <a href="https://suffocationpit.bandcamp.com/">music</a>
                   </div>
                   <div className={styles.redBox}>
                     <Link to="visuals">visuals</Link>
