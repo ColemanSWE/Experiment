@@ -1,15 +1,24 @@
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    z-index: -3;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  z-index: -3;
+}
 
-p {
-  color: white;
+.bandcamp {
+
+}
+
+.twitter {
+
+}
+
+.youtube {
+
 }
