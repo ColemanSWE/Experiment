@@ -18,7 +18,7 @@ export class Home extends Component {
                     <Link to="visuals">visuals</Link>
                   </div>
                   <div className={styles.greenBox}>
-                    <Link to="shop">shop</Link>
+                    <a href="https://suffocationpit.bandcamp.com">shop</a> {/* Change this sometime to depending on how I do tshirts for merch. */}
                   </div>
                   <div className={styles.purpleBox}>
                     <Link to="about">about</Link>
