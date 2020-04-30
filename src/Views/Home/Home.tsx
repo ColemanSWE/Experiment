@@ -12,13 +12,13 @@ export class Home extends Component {
               <div className={styles.grad}>
                 <div className={styles.centered}>
                   <div className={styles.blueBox}>
-                    <a href="https://suffocationpit.bandcamp.com/">music</a> {/* Change this sometime to music page that has spotify links, etc. */}
+                    <Link to="music">music</Link>
                   </div>
                   <div className={styles.redBox}>
                     <Link to="visuals">visuals</Link>
                   </div>
                   <div className={styles.greenBox}>
-                    <a href="https://suffocationpit.bandcamp.com">shop</a> {/* Change this sometime to depending on how I do tshirts for merch. */}
+                    <Link to="shop">shop</Link>
                   </div>
                   <div className={styles.purpleBox}>
                     <Link to="about">about</Link>
