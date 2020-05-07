@@ -12,16 +12,16 @@ export class Home extends Component {
               <div className={styles.grad}>
                 <div className={styles.centered}>
                   <div className={styles.blueBox}>
-                    <Link to="music">music</Link>
+                    <Link to="music">mus<br />ic</Link>
                   </div>
                   <div className={styles.redBox}>
                     <Link to="visuals">visuals</Link>
                   </div>
                   <div className={styles.greenBox}>
-                    <Link to="shop">shop</Link>
+                    <Link to="shop">sh<br />op</Link>
                   </div>
                   <div className={styles.purpleBox}>
-                    <Link to="about">about</Link>
+                    <Link to="about">abo<br />ut</Link>
                   </div>
                 </div>
               </div>
