@@ -12,6 +12,9 @@
     background-image: linear-gradient(to right, #ebd4fc, #FDDFDF, #cfeefc, #DEFDE0);
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @keyframes bg-animation {
@@ -106,6 +109,11 @@
   
   @media screen and (max-width: 500px) {
 
+    body {
+      background-size: 100%;
+      animation: none;
+    }
+
     div {
         line-height: 70px;
     }
@@ -115,21 +123,22 @@
     }
 
     .centered {
-      height: 80%;
-      width: 70%;
+      flex: 1 1 auto;
       position: absolute;
-      top: 60%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       border: 5px solid #FCF7DE;
+      margin-bottom: 10px;
     }
   
     .blueBox {
       width: 60%; 
       height: 50%;
-      font-size: 20%;
+      font-size: 50px;
       top: 20%;
       left: 10%;
+      border: 4px solid #DEF3FD;
     }
   
     .redBox {
@@ -138,6 +147,7 @@
       font-size: 38px;
       top: 10px;
       left: 10%;
+      border: 4px solid #FDDFDF;
     }
   
     .greenBox {
@@ -146,6 +156,7 @@
       font-size: 50px;
       top: 10px;
       left: 10%;
+      border: 4px solid #DEFDE0;
     }
   
     .purpleBox {
@@ -154,6 +165,7 @@
       font-size: 50px;
       top: 10px;
       left: 10%;
+      border: 4px solid #F0DEFD;
     }
 }
 
