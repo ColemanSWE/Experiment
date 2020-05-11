@@ -34,8 +34,8 @@ let parameters = {
             "mode": "repulse",
             "parallax": {
             "enable": false,
-            "force": 60,
-            "smooth": 10
+            "force": 20,
+            "smooth": 2
             }
         },
         "resize": true

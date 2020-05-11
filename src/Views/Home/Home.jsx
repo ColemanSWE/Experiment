@@ -7,7 +7,34 @@ import Particles from 'react-particles-js'
 import parameters from '../../particleConfig'
 
 export class Home extends Component {
-    render() {
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  filler = ""
+  
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  
+  render() {
+    if (this.state.width >= 500) {
+      this.filler = <br />
+    }
+    else if (this.state.width < 500) {
+      this.filler = ""
+    }
         return(
         <>
           <Header />
@@ -15,16 +42,16 @@ export class Home extends Component {
                 <Particles className={styles.particles} params={parameters} />
                 <div className={styles.centered}>
                   <Link to="music" className={styles.blueBox}>
-                      mus<br />ic
+                    mus{this.filler}ic
                   </Link>
                   <Link to="visuals" className={styles.redBox}>
                     visuals
                   </Link>
                   <Link to="shop" className={styles.greenBox}>
-                    sh<br />op
+                    sh{this.filler}op
                   </Link>
                   <Link to="about" className={styles.purpleBox}>
-                    abo<br />ut
+                    abo{this.filler}ut
                   </Link>
                 </div>
               </div>
