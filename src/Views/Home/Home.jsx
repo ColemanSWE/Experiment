@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import { Header } from '../../Components/Header/'
-import { Footer } from '../../Components/Footer/'
+import { Header } from '../../Components/Header'
+import { Footer } from '../../Components/Footer'
 import styles from './styles.module.scss'
 import { Link } from "react-router-dom"
+import Particles from 'react-particles-js'
+import parameters from '../../particleConfig'
 
 export class Home extends Component {
     render() {
@@ -10,6 +12,7 @@ export class Home extends Component {
         <>
           <Header />
               <div className={styles.grad}>
+                <Particles className={styles.centered} params={parameters} />
                 <div className={styles.centered}>
                   <Link to="music" className={styles.blueBox}>
                       mus<br />ic
