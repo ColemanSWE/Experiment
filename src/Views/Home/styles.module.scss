@@ -147,4 +147,5 @@
 .redBox:hover, .blueBox:hover, .greenBox:hover, .purpleBox:hover{
   background-color: black;
   color: white;
+  background-clip: content-box;
 }
