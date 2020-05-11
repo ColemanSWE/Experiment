@@ -5,40 +5,22 @@
        url('Fonts/mb-thin_worms-webfont.woff') format('woff'), 
 }
 
-img {
-  max-width: 15%;
-  height:auto;
-}
-
-.header {
-    overflow: hidden;
-    background-color: transparent;
-    width: 100%;
-}
-  
-.header a {
-  font-family: 'thin_worms', Fallback, sans-serif;
+.logo {
+  max-width: 20%;
+  height: auto;
   float: left;
-  color: black;
-  padding: 12px 12px 12px 12px;
-  text-decoration: none;
-  font-size: 72px;
   line-height: 72px;
   border-radius: 8px;
   margin: 12px 12px 12px 12px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-  
-.header a.active {
-  color: black;
+.hand {
+  max-width: 15%;
 }
 
-.headerRight {
-  float: right;
+.header {
+    background-color: transparent;
+    width: 100%;
 }
 
 @media screen and (max-width: 500px) {
