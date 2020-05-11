@@ -18,7 +18,7 @@ let parameters = {
     "emitters": [],
     "fpsLimit": 30,
     "interactivity": {
-        "detectsOn": "canvas",
+        "detectsOn": "window",
         "events": {
         "onClick": {
             "enable": true,
@@ -31,7 +31,7 @@ let parameters = {
         },
         "onHover": {
             "enable": true,
-            "mode": "bubble",
+            "mode": "repulse",
             "parallax": {
             "enable": false,
             "force": 60,

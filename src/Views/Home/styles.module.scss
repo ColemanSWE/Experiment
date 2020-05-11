@@ -90,6 +90,17 @@
     border: 9px solid #FCF7DE;
   }
   
+  .particles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    height: 62%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
   a {
     text-decoration: none;
     color: black;

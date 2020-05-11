@@ -12,7 +12,7 @@ export class Home extends Component {
         <>
           <Header />
               <div className={styles.grad}>
-                <Particles className={styles.centered} params={parameters} />
+                <Particles className={styles.particles} params={parameters} />
                 <div className={styles.centered}>
                   <Link to="music" className={styles.blueBox}>
                       mus<br />ic
