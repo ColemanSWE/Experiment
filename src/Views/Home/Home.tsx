@@ -11,18 +11,18 @@ export class Home extends Component {
           <Header />
               <div className={styles.grad}>
                 <div className={styles.centered}>
-                  <div className={styles.blueBox}>
-                    <Link to="music">mus<br />ic</Link>
-                  </div>
-                  <div className={styles.redBox}>
-                    <Link to="visuals">visuals</Link>
-                  </div>
-                  <div className={styles.greenBox}>
-                    <Link to="shop">sh<br />op</Link>
-                  </div>
-                  <div className={styles.purpleBox}>
-                    <Link to="about">abo<br />ut</Link>
-                  </div>
+                  <Link to="music" className={styles.blueBox}>
+                      mus<br />ic
+                  </Link>
+                  <Link to="visuals" className={styles.redBox}>
+                    visuals
+                  </Link>
+                  <Link to="shop" className={styles.greenBox}>
+                    sh<br />op
+                  </Link>
+                  <Link to="about" className={styles.purpleBox}>
+                    abo<br />ut
+                  </Link>
                 </div>
               </div>
           <Footer />

@@ -9,7 +9,7 @@
   }
   
   body {
-    background-image: linear-gradient(to right, #ebd4fc, #FDDFDF, #cfeefc);
+    background-image: linear-gradient(to right, #ebd4fc, #FDDFDF, #cfeefc, #DEFDE0);
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
   }
@@ -142,4 +142,9 @@
       top: 10px;
       left: 10%;
     }
-  }
+}
+
+.redBox:hover, .blueBox:hover, .greenBox:hover, .purpleBox:hover{
+  background-color: black;
+  color: white;
+}
