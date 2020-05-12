@@ -43,3 +43,21 @@
     display: none;
   }
 }
+
+$breakpoint-tablet: 768px;
+
+@media (min-width: $breakpoint-tablet) and (max-width: 1100px) {
+  .header {
+    max-height: 20%;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 70%;
+    float: none;
+  }
+
+  .hand {
+    display: none;
+  }
+}

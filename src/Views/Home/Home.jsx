@@ -29,10 +29,10 @@ export class Home extends Component {
   }
   
   render() {
-    if (this.state.width >= 500) {
+    if (this.state.width >= 1100) {
       this.filler = <br />
     }
-    else if (this.state.width < 500) {
+    else if (this.state.width < 1100) {
       this.filler = ""
     }
         return(

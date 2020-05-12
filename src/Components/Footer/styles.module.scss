@@ -22,3 +22,15 @@
 .youtube {
   max-height: 50%;
 } /* Fix icons for mobile with a breakpoint. */
+
+$breakpoint-tablet: 768px;
+
+@media (min-width: $breakpoint-tablet) and (max-width: 1100px) {
+  .footer {
+    bottom: 20px;
+  }
+
+  img {
+    line-height: 10px;
+  }
+}
