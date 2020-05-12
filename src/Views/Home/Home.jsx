@@ -14,6 +14,7 @@ export class Home extends Component {
   }
 
   filler = ""
+  particles = undefined
   
   componentDidMount() {
     this.updateWindowDimensions();
@@ -31,6 +32,7 @@ export class Home extends Component {
   render() {
     if (this.state.width >= 1100) {
       this.filler = <br />
+      this.particles = <Particles className={styles.particles} params={parameters} />
     }
     else if (this.state.width < 1100) {
       this.filler = ""
@@ -39,7 +41,7 @@ export class Home extends Component {
         <>
           <Header />
               <div className={styles.grad}>
-                <Particles className={styles.particles} params={parameters} />
+                {this.particles}
                 <div className={styles.centered}>
                   <Link to="music" className={styles.blueBox}>
                     mus{this.filler}ic
