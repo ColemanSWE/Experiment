@@ -49,9 +49,9 @@ export class Home extends Component {
                   <Link to="visuals" className={styles.redBox}>
                     visuals
                   </Link>
-                  <Link to="shop" className={styles.greenBox}>
+                  <a href="https://teespring.com/stores/the-suffocation-pit" className={styles.greenBox}>
                     sh{this.filler}op
-                  </Link>
+                  </a>
                   <Link to="about" className={styles.purpleBox}>
                     abo{this.filler}ut
                   </Link>
