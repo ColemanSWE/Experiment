@@ -43,9 +43,9 @@ export class Home extends Component {
               <div className={styles.grad}>
                 {this.particles}
                 <div className={styles.centered}>
-                  <Link to="music" className={styles.blueBox}>
+                  <a href="https://soundcloud.com/suffocationpit" className={styles.blueBox}>
                     mus{this.filler}ic
-                  </Link>
+                  </a>
                   <Link to="visuals" className={styles.redBox}>
                     visuals
                   </Link>

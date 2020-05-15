@@ -22,15 +22,17 @@
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    height: 50%;
+    height: 40%;
     width: 75%;
     position: absolute;
     top: 60%;
-    left: 55%;
+    left: 57%;
     transform: translate(-50%, -50%);
     border: 5px solid #FCF7DE;
-    font-family: 'barcode', fallback, sans-serif;
+    font-family: 'barcode';
     font-size: 100px;
+    vertical-align: middle;
+    padding: 50px;
 }
 
 $breakpoint-tablet: 768px;
@@ -43,11 +45,11 @@ $breakpoint-tablet: 768px;
     .container {
         flex: 1 1 auto;
         position: absolute;
-        top: 65%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         border: 5px solid #FCF7DE;
-        height: 50%;
+        height: 45%;
         font-size: 72px;
     }
 }
@@ -60,9 +62,12 @@ $breakpoint-tablet: 768px;
         left: 50%;
         transform: translate(-50%, -50%);
         border: 5px solid #FCF7DE;
-        height: 60%;
+        height: 40%;
+        width:60%;
         font-size: 50px;
-    }
+        padding: none;
+        vertical-align: none;
+        }
 
     .title {
         left: 20%;
