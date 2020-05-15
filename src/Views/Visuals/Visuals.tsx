@@ -13,7 +13,8 @@ export class Visuals extends Component {
           visuals
         </div>
         <div className={styles.container}>
-
+          <img className={styles.destroyed} alt="Artwork" height="200" src="destroyedlogo.png"></img>
+          <img className={styles.programmed} alt="Artwork" height="200" src="programmed.png"></img>
         </div>
         <Footer />
       </>

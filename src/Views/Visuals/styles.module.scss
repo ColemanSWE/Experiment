@@ -23,6 +23,26 @@
     left: 55%;
     transform: translate(-50%, -50%);
     border: 5px solid #FCF7DE;
+    
+    img:hover {
+        height: 400px;
+        margin-right: 10px;
+        top: 0%;
+        z-index: 1;
+    }
+}
+
+.destroyed {
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    top: 30%;
+}
+
+.programmed {
+    position: absolute;
+    left: 50%;
+    top: 30%;
 }
 
 @media screen and (max-width: 500px) {
@@ -34,6 +54,20 @@
         transform: translate(-50%, -50%);
         border: 5px solid #FCF7DE;
         height: 60%;
+    }
+
+    .destroyed {
+        top: 10%;
+        max-width: 90%;
+        left: 5%;
+        max-height: 50%;
+    }
+
+    .programmed {
+        top: 58%;
+        max-width: 90%;
+        left: 5%;
+        max-height: 50%;
     }
 
     .title {
@@ -48,6 +82,15 @@ $breakpoint-tablet: 768px;
 @media (min-width: $breakpoint-tablet) and (max-width: 1100px) {
     .title{
        left: 1%; 
+    }
+
+    .programmed {
+        position: absolute;
+        right: 10px;
+        left: 65%;
+    }
+    .destroyed {
+        left: 1%;
     }
 
     .container {

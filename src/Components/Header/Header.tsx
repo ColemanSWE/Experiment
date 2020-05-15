@@ -6,7 +6,7 @@ export class Header extends Component {
         return (
             <div className={styles.header}>
                 <a className={styles.imgLink} href="/">
-                    <img className={styles.logo} src="SuffocationPitGif.gif" alt="Suffcation Pit" />
+                    <img className={styles.logo} src="SuffocationPitGif.gif" alt="Suffcation Pit logo/home page button" />
                 </a>
                 <br />
                 <br />
