@@ -1,7 +1,7 @@
 @font-face {
-    font-family: '3dlet';
-    src:  url('../../Fonts/3dlet-webfont.woff2') format('woff2'),
-          url('../../Fonts/3dlet-webfont.woff') format('woff');
+  font-family: '3dlet';
+  src:  url('../../Fonts/3dlet/3dlet-webfont.woff2') format('woff2'),
+        url('../../Fonts/3dlet/3dlet-webfont.woff') format('woff');
   }
   
   @-ms-viewport{
@@ -27,8 +27,8 @@
   }
   
   div {
-    line-height: 200px;
-    font-size: 160px;
+    line-height: 100px;
+    font-size: 72px;
     word-wrap: break-word;
   }
   
@@ -38,7 +38,7 @@
     left: 10%;
     font-family: '3dlet', Fallback, sans-serif;
     text-align: center;
-    border: 9px solid #DEF3FD;
+    border: 5px solid #DEF3FD;
     vertical-align: middle;
     width: 70%;
     height: 35%;
@@ -50,7 +50,7 @@
     position: relative;
     font-family: '3dlet', Fallback, sans-serif;
     text-align: center;
-    border: 9px solid #FDDFDF;
+    border: 5px solid #FDDFDF;
     width: 70%;
     height: 35%;
     vertical-align: middle; 
@@ -63,7 +63,7 @@
     position: relative;
     font-family: '3dlet', Fallback, sans-serif;
     text-align: center;
-    border: 9px solid #DEFDE0;
+    border: 5px solid #DEFDE0;
     width: 70%;
     height: 35%;
     vertical-align: middle;
@@ -75,7 +75,7 @@
     position: relative;
     font-family: '3dlet', Fallback, sans-serif;
     text-align: center;
-    border: 9px solid #F0DEFD;
+    border: 5px solid #F0DEFD;
     width: 70%;
     height: 35%;
     vertical-align: middle;
@@ -90,7 +90,7 @@
     top: 50%;
     left: 60%;
     transform: translate(-50%, -50%);
-    border: 9px solid #FCF7DE;
+    border: 5px solid #FCF7DE;
   }
   
   .particles {

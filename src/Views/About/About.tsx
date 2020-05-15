@@ -12,7 +12,9 @@ export class About extends Component {
           about
         </div>
         <div className={styles.container}>
+          Suffocation Pit is the primary music/visual art project of Coleman Rose. <br /><br />
 
+          He is based in Stockholm, Sweden
         </div>
         <Footer />
       </>

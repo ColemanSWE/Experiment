@@ -1,7 +1,13 @@
 @font-face {
     font-family: '3dlet';
-    src:  url('../../Fonts/3dlet-webfont.woff2') format('woff2'),
-          url('../../Fonts/3dlet-webfont.woff') format('woff');
+    src:  url('../../Fonts/3dlet/3dlet-webfont.woff2') format('woff2'),
+          url('../../Fonts/3dlet/3dlet-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'barcode';
+    src:  url('../../Fonts/barcode/barcodefont-webfont.woff2') format('woff2'),
+          url('../../Fonts/barcode/barcodefont-webfont.woff') format('woff');
 }
 
 .title {
@@ -23,6 +29,8 @@
     left: 55%;
     transform: translate(-50%, -50%);
     border: 5px solid #FCF7DE;
+    font-family: 'barcode', fallback, sans-serif;
+    font-size: 100px;
 }
 
 $breakpoint-tablet: 768px;
@@ -40,6 +48,7 @@ $breakpoint-tablet: 768px;
         transform: translate(-50%, -50%);
         border: 5px solid #FCF7DE;
         height: 50%;
+        font-size: 72px;
     }
 }
 
@@ -52,6 +61,7 @@ $breakpoint-tablet: 768px;
         transform: translate(-50%, -50%);
         border: 5px solid #FCF7DE;
         height: 60%;
+        font-size: 50px;
     }
 
     .title {
