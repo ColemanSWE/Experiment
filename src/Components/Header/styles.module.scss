@@ -14,10 +14,6 @@
   margin: 12px 12px 12px 12px;
 }
 
-.hand {
-  max-width: 15%;
-}
-
 .header {
     background-color: transparent;
     width: 100%;
@@ -39,9 +35,7 @@
     height:auto;
   }
 
-  .hand {
-    display: none;
-  }
+  
 }
 
 $breakpoint-tablet: 768px;
@@ -55,9 +49,5 @@ $breakpoint-tablet: 768px;
   .logo {
     max-width: 70%;
     float: none;
-  }
-
-  .hand {
-    display: none;
   }
 }
