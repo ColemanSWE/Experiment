@@ -15,6 +15,8 @@ export class Visuals extends Component {
         <div className={styles.container}>
           <img className={styles.destroyed} alt="Artwork" height="200" src="destroyedlogo.png"></img>
           <img className={styles.programmed} alt="Artwork" height="200" src="programmed.png"></img>
+          <img className={styles.programmed} alt="Artwork" height="200" src="destroyed2.png"></img>
+          <img className={styles.programmed} alt="Artwork" height="200" src="soft.png"></img>
         </div>
         <Footer />
       </>
