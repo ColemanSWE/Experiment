@@ -4,28 +4,47 @@
           url('../../Fonts/3dlet/3dlet-webfont.woff') format('woff');
 }
 
+html { 
+    height:100%; 
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.contentContainer {
+    justify-content: center;
+    flex: 1;
+    max-height: 90vh;
+}
+
 .title {
     font-family: '3dlet', Fallback, sans-serif;
     font-size: 160px;
     text-align: center;
-    top: 20%;
-    left: 40%;
-    position: absolute;
+    position: relative;    
 }
 
 .container {
-    justify-content: space-evenly;
+    padding-top: 10px; 
+    margin:0; 
+    position:relative; 
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-    height: 50%;
-    width: 75%;
-    position: absolute;
-    top: 60%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    height: auto;
     border: 5px solid #FCF7DE;
-    
+    margin-bottom: 10%;
+    width: 90%;
+    justify-content: center;
+    left: 5%;
+
     img {
         border: 5px solid #DEF3FD;
         padding: 5px 5px 5px 5px;
@@ -39,12 +58,13 @@
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border: 5px solid #FCF7DE;
         height: 60%;
     
         img {
+            flex-grow: 1;
             width: 35%;
             height: 40%;
+            border: unset;
         }
     
     } 
@@ -54,6 +74,12 @@
         left: 5%;
         top: 20%;
         font-size: 68px;
+    }
+}
+
+@media (max-height: 568px) {
+    .title {
+        font-size: 64px;
     }
 }
 

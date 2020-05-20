@@ -1,25 +1,24 @@
 import React, { Component } from 'react'
-import { Header } from '../../Components/Header/'
-import { Footer } from '../../Components/Footer/'
 import styles from './styles.module.scss'
-
+import { Gallery } from '../../Components/Gallery/'
+import { Header } from '../../Components/Header'
+import { Footer } from '../../Components/Footer'
 
 export class Visuals extends Component {
   render() {
     return (
-      <>
+      <div className={styles.pageContainer}>
         <Header />
-        <div className={styles.title}>
-          visuals
-        </div>
-        <div className={styles.container}>
-          <img className={styles.destroyed} alt="Artwork" height="200" src="destroyedlogo.png"></img>
-          <img className={styles.programmed} alt="Artwork" height="200" src="programmed.png"></img>
-          <img className={styles.programmed} alt="Artwork" height="200" src="destroyed2.png"></img>
-          <img className={styles.programmed} alt="Artwork" height="200" src="soft.png"></img>
-        </div>
+          <div className={styles.contentContainer}>
+            <div className={styles.title}>
+              visuals
+            </div>
+            <div className={styles.container}>
+              <Gallery />
+            </div>
+          </div>
         <Footer />
-      </>
+      </div>
     );
   } 
 }

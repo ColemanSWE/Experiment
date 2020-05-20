@@ -23,6 +23,18 @@ body {
   }
 }
 
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.contentContainer {
+  justify-content: center;
+  flex: 1;
+}
+
 .hand {
   max-width: 20%;
   position: absolute;
@@ -39,6 +51,7 @@ body {
   width: 20%;
   margin-left: auto;
   margin-right: auto;
+  word-wrap: break-word;
 }
 
 .blueBox {
@@ -55,6 +68,7 @@ body {
 
 .purpleBox {
   border: 5px solid #F0DEFD;
+  font-size: 52px;
 }
 
 .container {

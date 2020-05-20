@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { Header } from '../../Components/Header'
-import { Footer } from '../../Components/Footer'
 import styles from './styles.module.scss'
 import { Link } from "react-router-dom"
 import Particles from 'react-particles-js'
 import parameters from '../../particleConfig'
+import { Footer, Header } from '../../Components'
 
 export class Home extends Component {
   constructor(props) {
@@ -38,8 +37,9 @@ export class Home extends Component {
       this.filler = ""
     }
         return(
-        <>
+        <div className={styles.pageContainer}>
           <Header />
+          <div className={styles.contentContainer}>
           <img className={styles.hand} src="Wireframe Hand.png" alt="" />
               <div className={styles.grad}>
                 {this.particles}
@@ -54,12 +54,13 @@ export class Home extends Component {
                     sh{this.filler}op
                   </a>
                   <Link to="about" className={styles.purpleBox}>
-                    abo{this.filler}ut
+                    about/{this.filler}contact
                   </Link>
                 </div>
               </div>
+            </div>
           <Footer />
-        </>
+        </div>
         )
       }
 }

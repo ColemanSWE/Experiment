@@ -10,74 +10,68 @@
           url('../../Fonts/barcode/barcodefont-webfont.woff') format('woff');
 }
 
+html { 
+    height:100%; 
+}
+
+.contactForm {
+    display: flex;
+    border: 5px solid #FCF7DE;
+    width: 90%;
+    position: relative;
+    margin-bottom: 60px;
+    left: 5%;
+
+    input {
+        width: 100%;
+    }
+}
+
+.text {
+    font-family: barcode;
+    font-size: 72px;
+    padding: 10px 10px 10px 10px;
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.contentContainer {
+    justify-content: center;
+    flex: 1;
+}
+
 .title {
     font-family: '3dlet', Fallback, sans-serif;
     font-size: 160px;
     text-align: center;
-    top: 20%;
-    left: 40%;
-    position: absolute;
+    position: relative;    
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    height: 40%;
-    width: 75%;
-    position: absolute;
-    top: 60%;
-    left: 57%;
-    transform: translate(-50%, -50%);
+    padding-top: 10px; 
+    margin:0; 
+    position:relative; 
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
     border: 5px solid #FCF7DE;
-    font-family: 'barcode';
-    font-size: 100px;
-    vertical-align: middle;
-    padding: 50px;
-}
+    margin-bottom: 10px;
+    width: 90%;
+    justify-content: center;
+    left: 5%;
+    align-items: center;
 
-$breakpoint-tablet: 768px;
-
-@media (min-width: $breakpoint-tablet) and (max-width: 1100px) {
-    .title{
-       left: 15%; 
-    }
-
-    .container {
-        flex: 1 1 auto;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 5px solid #FCF7DE;
-        height: 45%;
-        font-size: 72px;
+    img {
+        border: 5px solid #DEF3FD;
+        padding: 5px 5px 5px 5px;
+        margin: 10px 10px 10px 10px;
     }
 }
-
-@media screen and (max-width: 500px) {
-    .container {
-        display: flex;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 5px solid #FCF7DE;
-        height: 40%;
-        width:60%;
-        padding: none;
-        vertical-align: none;
-        font-size: 40px;
-    }
-
-    .text {
-        font-size: small;
-        font-size: unset;
-    }
-
-    .title {
-        left: 20%;
-        top: 20%;
-        font-size: 72px;
-    }
-}
-
