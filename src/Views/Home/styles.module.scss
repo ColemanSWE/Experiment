@@ -129,8 +129,17 @@ a {
     margin-bottom: 10px;
   }
 
-  .blueBox, .redBox, .greenBox, .purpleBox {
+  .blueBox, .redBox, .greenBox {
     font-size: 50px;
+    height: 15%;
+    width: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 75px;
+  }
+
+  .purpleBox {
+    font-size: 28px;
     height: 15%;
     width: 90%;
     margin-top: auto;
