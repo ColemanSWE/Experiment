@@ -46,7 +46,6 @@ body {
   font-family: '3dlet', Fallback, sans-serif;
   text-align: center;
   vertical-align: middle;
-  font-size: 90px;
   line-height: 105px;
   width: 20%;
   margin-left: auto;
@@ -56,19 +55,22 @@ body {
 
 .blueBox {
   border: 5px solid #DEF3FD;
+  font-size: 400%;
 }
 
 .redBox {
   border: 5px solid #FDDFDF;
+  font-size: 400%;
 }
 
 .greenBox {
   border: 5px solid #DEFDE0;
+  font-size: 400%;
 }
 
 .purpleBox {
   border: 5px solid #F0DEFD;
-  font-size: 52px;
+  font-size: 250%;
 }
 
 .container {

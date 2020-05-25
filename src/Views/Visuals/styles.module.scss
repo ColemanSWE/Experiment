@@ -4,8 +4,33 @@
           url('../../Fonts/3dlet/3dlet-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'barcode';
+    src:  url('../../Fonts/barcode/barcodefont-webfont.woff2') format('woff2'),
+          url('../../Fonts/barcode/barcodefont-webfont.woff') format('woff');
+}
+
 html { 
     height:100%; 
+}
+
+.contactForm {
+    display: flex;
+    border: 5px solid #FCF7DE;
+    width: 90%;
+    position: relative;
+    margin-bottom: 60px;
+    left: 5%;
+
+    input {
+        width: 100%;
+    }
+}
+
+.text {
+    font-family: barcode;
+    font-size: 72px;
+    padding: 10px 10px 10px 10px;
 }
 
 .pageContainer {
@@ -18,7 +43,6 @@ html {
 .contentContainer {
     justify-content: center;
     flex: 1;
-    max-height: 90vh;
 }
 
 .title {
@@ -38,12 +62,12 @@ html {
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-    height: auto;
     border: 5px solid #FCF7DE;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     width: 90%;
     justify-content: center;
     left: 5%;
+    align-items: center;
 
     img {
         border: 5px solid #DEF3FD;
@@ -52,55 +76,12 @@ html {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .container {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 60%;
-    
-        img {
-            flex-grow: 1;
-            width: 35%;
-            height: 40%;
-            border: unset;
-        }
-    
-    } 
-
+@media (max-width: 500px) {
     .title {
-        text-align: center;
-        left: 5%;
-        top: 20%;
-        font-size: 68px;
+        font-size: 350%;
     }
-}
-
-@media (max-height: 568px) {
-    .title {
-        font-size: 64px;
-    }
-}
-
-$breakpoint-tablet: 768px;
-
-@media (min-width: $breakpoint-tablet) and (max-width: 1100px) {
-    .title{
-       left: 1%; 
-    }
-
+    
     .container {
-        flex-wrap: wrap;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 5px solid #FCF7DE;
-        height: 50%;
-
-        img {
-            width: 35%;
-        }
+        max-width: 90%;
     }
-}
+  }

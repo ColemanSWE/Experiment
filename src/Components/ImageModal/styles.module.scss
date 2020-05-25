@@ -8,6 +8,8 @@
 }
    
 .singleImage {
+    height: auto;
+    max-width: 10%;
     padding: 0 20px 20px;
     height: 300px;
     border-radius: 34;
@@ -37,21 +39,20 @@
 .popupImage {
     position: absolute;
     top: -20%;
-    transform: scale(0.7);
+    transform: scale(0.5);
     margin: auto;
 }
 
 .imageClosingButton {
     position: relative;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 @media (max-width: 500px) {
     .popupImage {
-        position: absolute;
-        top: 20%;
-        left: 80%;
-        transform: scale(15)
+        top: -20%;
+        left: -130%;
+        transform: scale(0.2)
     }
 
     .imageClosingButton {
