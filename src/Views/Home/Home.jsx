@@ -59,7 +59,7 @@ export class Home extends Component {
                 </div>
               </div>
             </div>
-          <Footer />
+            <Footer />
         </div>
         )
       }
