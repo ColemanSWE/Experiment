@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import styles from './styles.module.scss'
 
 export function ContactForm() {
 
@@ -18,7 +19,7 @@ export function ContactForm() {
     <form className="contact-form" onSubmit={sendEmail}>
       <input type="hidden" name="contact_number" />
       <label>Email</label>
-      <input type="email" name="senderEmail" />
+      <input type="email" name="senderEmail" className={styles.email}/>
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />

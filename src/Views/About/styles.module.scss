@@ -92,4 +92,8 @@ input[type=text], select, textarea {
     .title {
         font-size: 70px;
     }
+
+    input[type=email] {
+        width: 97%; /* Full width */
+      }
 }
