@@ -1,22 +1,17 @@
-
 @font-face {
-  font-family: 'thin_worms';
-  src: url('Fonts/mb-thin_worms-webfont.woff2') format('woff2'), 
-       url('Fonts/mb-thin_worms-webfont.woff') format('woff'), 
+  font-family: "thin_worms";
+  src: url("Fonts/mb-thin_worms-webfont.woff2") format("woff2"),
+    url("Fonts/mb-thin_worms-webfont.woff") format("woff");
 }
 
 .logo {
   max-width: 20%;
-  height: auto;
   float: left;
-  line-height: 72px;
-  border-radius: 8px;
-  margin: 12px 12px 12px 12px;
 }
 
 .header {
-    background-color: transparent;
-    width: 100%;
+  background-color: transparent;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
@@ -25,17 +20,15 @@
     display: block;
     text-align: left;
   }
-  
+
   .header-right {
     float: none;
   }
 
   .logo {
     max-width: 90%;
-    height:auto;
+    height: auto;
   }
-
-  
 }
 
 $breakpoint-tablet: 768px;

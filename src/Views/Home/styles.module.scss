@@ -1,22 +1,22 @@
 @font-face {
-  font-family: '3dlet';
-  src:  url('../../Fonts/3dlet/3dlet-webfont.woff2') format('woff2'),
-        url('../../Fonts/3dlet/3dlet-webfont.woff') format('woff');
+  font-family: "3dlet";
+  src: url("../../Fonts/3dlet/3dlet-webfont.woff2") format("woff2"),
+    url("../../Fonts/3dlet/3dlet-webfont.woff") format("woff");
 }
-  
-@-ms-viewport{
+
+@-ms-viewport {
   width: device-width;
 }
 
 body {
-  background-image: linear-gradient(to right, #ebd4fc, #cfeefc, #FDDFDF, #DEFDE0);
+  background-color: #ffebef;
   background-size: 200%;
   animation: bg-animation 3s infinite alternate;
 }
 
 @keyframes bg-animation {
   0% {
-    background-position: left
+    background-position: left;
   }
   100% {
     background-position: right;
@@ -42,8 +42,11 @@ body {
   top: 20%;
 }
 
-.blueBox, .redBox, .greenBox, .purpleBox {
-  font-family: '3dlet', Fallback, sans-serif;
+.blueBox,
+.redBox,
+.greenBox,
+.purpleBox {
+  font-family: "3dlet", Fallback, sans-serif;
   text-align: center;
   vertical-align: middle;
   line-height: 105px;
@@ -54,22 +57,22 @@ body {
 }
 
 .blueBox {
-  border: 5px solid #DEF3FD;
+  border: 2px solid black;
   font-size: 400%;
 }
 
 .redBox {
-  border: 5px solid #FDDFDF;
+  border: 2px solid black;
   font-size: 400%;
 }
 
 .greenBox {
-  border: 5px solid #DEFDE0;
+  border: 2px solid black;
   font-size: 400%;
 }
 
 .purpleBox {
-  border: 5px solid #F0DEFD;
+  border: 2px solid black;
   font-size: 250%;
 }
 
@@ -83,7 +86,7 @@ body {
   top: 50%;
   left: 60%;
   transform: translate(-50%, -50%);
-  border: 5px solid #FCF7DE;
+  border: 2px solid black;
   justify-content: center;
 }
 
@@ -101,7 +104,10 @@ a {
   color: black;
 }
 
-.redBox:hover, .blueBox:hover, .greenBox:hover, .purpleBox:hover{
+.redBox:hover,
+.blueBox:hover,
+.greenBox:hover,
+.purpleBox:hover {
   background-color: black;
   color: white;
   background-clip: content-box;
@@ -125,11 +131,13 @@ a {
     flex-direction: column;
     top: 55%;
     left: 50%;
-    border: 5px solid #FCF7DE;
+    border: 1px solid black;
     margin-bottom: 10px;
   }
 
-  .blueBox, .redBox, .greenBox {
+  .blueBox,
+  .redBox,
+  .greenBox {
     font-size: 50px;
     height: 15%;
     width: 90%;
@@ -148,25 +156,28 @@ a {
   }
 
   .blueBox {
-    border: 4px solid #DEF3FD;
+    border: 1px solid black;
   }
 
   .redBox {
-    border: 4px solid #FDDFDF;
+    border: 1px solid black;
     font-size: 38px;
   }
 
   .greenBox {
-    border: 4px solid #DEFDE0;
+    border: 1px solid black;
   }
 
   .purpleBox {
-    border: 4px solid #F0DEFD;
+    border: 1px solid black;
   }
 }
 
 @media (max-width: 320px) {
-  .blueBox, .redBox, .greenBox, .purpleBox {
+  .blueBox,
+  .redBox,
+  .greenBox,
+  .purpleBox {
     line-height: 50px;
   }
 }
@@ -186,14 +197,19 @@ $breakpoint-tablet: 750px;
     flex-wrap: wrap;
   }
 
-  .blueBox, .redBox, .greenBox, .purpleBox {
+  .blueBox,
+  .redBox,
+  .greenBox,
+  .purpleBox {
     width: 35%;
     text-align: center;
     height: 25%;
     line-height: 170px;
   }
 
-  .blueBox, .greenBox, .purpleBox {
+  .blueBox,
+  .greenBox,
+  .purpleBox {
     font-size: 50px;
   }
 
@@ -207,7 +223,7 @@ $breakpoint-tablet: 750px;
   }
 
   .particles {
-    display: none; 
+    display: none;
   }
 
   .hand {
