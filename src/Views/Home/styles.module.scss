@@ -9,18 +9,7 @@
 }
 
 body {
-  background-color: #ffebef;
-  background-size: 200%;
-  animation: bg-animation 3s infinite alternate;
-}
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
+  background-color: #fae3f9;
 }
 
 .pageContainer {

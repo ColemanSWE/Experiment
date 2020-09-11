@@ -42,28 +42,25 @@ export class Home extends Component {
         <Header />
         <div className={styles.contentContainer}>
           <img className={styles.hand} src="Wireframe Hand.png" alt="" />
-          <div className={styles.grad}>
-            {this.particles}
-            <div className={styles.container}>
-              <a
-                href="https://soundcloud.com/suffocationpit"
-                className={styles.blueBox}
-              >
-                mus{this.filler}ic
-              </a>
-              <Link to="visuals" className={styles.redBox}>
-                visu{this.filler}als
-              </Link>
-              <a
-                href="https://teespring.com/stores/the-suffocation-pit"
-                className={styles.greenBox}
-              >
-                sh{this.filler}op
-              </a>
-              <Link to="about" className={styles.purpleBox}>
-                about/{this.filler}contact
-              </Link>
-            </div>
+          <div className={styles.container}>
+            <a
+              href="https://soundcloud.com/suffocationpit"
+              className={styles.blueBox}
+            >
+              mus{this.filler}ic
+            </a>
+            <Link to="visuals" className={styles.redBox}>
+              visu{this.filler}als
+            </Link>
+            <a
+              href="https://teespring.com/stores/the-suffocation-pit"
+              className={styles.greenBox}
+            >
+              sh{this.filler}op
+            </a>
+            <Link to="about" className={styles.purpleBox}>
+              about/{this.filler}contact
+            </Link>
           </div>
         </div>
         <Footer />
