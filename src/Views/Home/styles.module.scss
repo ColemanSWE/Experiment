@@ -8,6 +8,16 @@
   width: device-width;
 }
 
+.logoAnimated {
+  max-width: 100%;
+  position: fixed;
+  top: -200px;
+}
+
+.logoContainer {
+  min-height: 200vh;
+}
+
 body {
   background-color: #fae3f9;
 }
@@ -15,7 +25,7 @@ body {
 .pageContainer {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 300vh;
   justify-content: center;
 }
 
@@ -29,41 +39,6 @@ body {
   position: absolute;
   left: 0%;
   top: 20%;
-}
-
-.blueBox,
-.redBox,
-.greenBox,
-.purpleBox {
-  font-family: "3dlet", Fallback, sans-serif;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 105px;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  word-wrap: break-word;
-  background-color: #e4eafa;
-}
-
-.blueBox {
-  border: 2px solid black;
-  font-size: 400%;
-}
-
-.redBox {
-  border: 2px solid black;
-  font-size: 400%;
-}
-
-.greenBox {
-  border: 2px solid black;
-  font-size: 400%;
-}
-
-.purpleBox {
-  border: 2px solid black;
-  font-size: 250%;
 }
 
 .container {
@@ -80,27 +55,9 @@ body {
   justify-content: center;
 }
 
-.particles {
-  height: 62%;
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
-
 a {
   text-decoration: none;
   color: black;
-}
-
-.redBox:hover,
-.blueBox:hover,
-.greenBox:hover,
-.purpleBox:hover {
-  background-color: black;
-  color: white;
-  background-clip: content-box;
 }
 
 @media screen and (max-width: 500px) {
@@ -113,10 +70,6 @@ a {
     animation: none;
   }
 
-  .particles {
-    display: none;
-  }
-
   .container {
     flex-direction: column;
     top: 55%;
@@ -124,54 +77,9 @@ a {
     border: 1px solid black;
     margin-bottom: 10px;
   }
-
-  .blueBox,
-  .redBox,
-  .greenBox {
-    font-size: 50px;
-    height: 15%;
-    width: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 75px;
-    background-color: #e4eafa;
-  }
-
-  .purpleBox {
-    font-size: 28px;
-    height: 15%;
-    width: 90%;
-    margin-top: auto;
-    margin-bottom: auto;
-    line-height: 75px;
-    background-color: #e4eafa;
-  }
-
-  .blueBox {
-    border: 1px solid black;
-  }
-
-  .redBox {
-    border: 1px solid black;
-    font-size: 38px;
-  }
-
-  .greenBox {
-    border: 1px solid black;
-  }
-
-  .purpleBox {
-    border: 1px solid black;
-  }
 }
 
 @media (max-width: 320px) {
-  .blueBox,
-  .redBox,
-  .greenBox,
-  .purpleBox {
-    line-height: 50px;
-  }
 }
 
 $breakpoint-tablet: 750px;
@@ -187,35 +95,6 @@ $breakpoint-tablet: 750px;
     top: 55%;
     left: 50%;
     flex-wrap: wrap;
-  }
-
-  .blueBox,
-  .redBox,
-  .greenBox,
-  .purpleBox {
-    width: 35%;
-    text-align: center;
-    height: 25%;
-    line-height: 170px;
-  }
-
-  .blueBox,
-  .greenBox,
-  .purpleBox {
-    font-size: 50px;
-  }
-
-  .purpleBox {
-    line-height: 90px;
-    font-size: 32px;
-  }
-
-  .redBox {
-    font-size: 32px;
-  }
-
-  .particles {
-    display: none;
   }
 
   .hand {
