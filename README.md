@@ -1,2 +1,5 @@
-# SuffocationPit.(domain ending here)
-Personal website. Gonna post music, art, etc. 
+# Suffocation Pit
+
+Hosted at suffocationpit.com
+
+A personal website used to post music, visual art, and anything else I'm working on and feel like sharing. :)
